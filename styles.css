@@ -80,13 +80,13 @@ main { flex: 1; }
   color: inherit;
 }
 .brand-logo {
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
   border-radius: 8px;
 }
 .brand-name {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 31px;
   letter-spacing: -0.01em;
 }
 .top-actions {
@@ -131,9 +131,15 @@ main { flex: 1; }
 .hero-inner {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
+  grid-template-areas:
+    "copy media"
+    "features media";
   align-items: center;
   gap: 28px;
 }
+.hero-copy { grid-area: copy; }
+.hero-media { grid-area: media; }
+.feature-list { grid-area: features; }
 .hero-title {
   font-size: clamp(32px, 5vw, 54px);
   line-height: 1.06;
@@ -229,13 +235,43 @@ main { flex: 1; }
 @media (max-width: 900px) {
   .hero-inner {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "media"
+      "features";
     gap: 22px;
+  }
+  .hero-image {
+    max-width: 420px;
   }
   .hero {
     padding-top: 32px;
   }
   .header-inner {
     height: 56px;
+  }
+  .hero-copy,
+  .feature-list {
+    text-align: center;
+  }
+  .feature-list {
+    justify-items: center;
+  }
+  /* Ensure feature icon and title stay together on one row */
+  .feature-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .feature-item h3 {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .feature-item p {
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -246,6 +282,18 @@ main { flex: 1; }
   }
   .hero-image {
     max-width: 1200px;
+  }
+}
+
+/* Ensure desktop keeps features under the header/subheader */
+@media (min-width: 901px) {
+  .hero-inner {
+    grid-template-areas:
+      "copy media"
+      "features media";
+  }
+  .feature-list {
+    align-self: start;
   }
 }
 
