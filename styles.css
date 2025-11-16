@@ -1,20 +1,20 @@
 /* Base - iOS-inspired */
 :root {
-  --bg: #ffffff;
-  --text: #0b0f1a;
-  --muted: #6b7280;
-  --border: #e5e7eb;
+  --bg: #000000;
+  --text: #f5f7fb;
+  --muted: #9aa3b2;
+  --border: #111827;
   --brand-1: #0ea5e9;
   --brand-2: #6366f1;
-  --surface: #f8fafc;
+  --surface: #000000;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0b0f1a;
+    --bg: #000000;
     --text: #f5f7fb;
     --muted: #9aa3b2;
-    --border: #1f2937;
-    --surface: #0f1624;
+    --border: #111827;
+    --surface: #000000;
   }
 }
 
@@ -43,7 +43,6 @@ html, body {
   top: 0;
   backdrop-filter: saturate(180%) blur(12px);
   background: color-mix(in srgb, var(--bg) 85%, transparent);
-  border-bottom: 1px solid var(--border);
   z-index: 10;
 }
 .header-inner {
@@ -140,7 +139,6 @@ html, body {
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid var(--border);
   padding: 18px 0;
   margin-top: 32px;
 }
