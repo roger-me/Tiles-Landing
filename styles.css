@@ -157,6 +157,12 @@ main { flex: 1; }
   font-size: clamp(16px, 2.2vw, 20px);
   color: var(--muted);
 }
+.hero-note {
+  margin: 24px 0 0;
+  font-size: 16px;
+  color: var(--muted);
+  opacity: 0.9;
+}
 .hero-media {
   display: flex;
   align-items: center;
@@ -283,25 +289,21 @@ main { flex: 1; }
   }
 }
 
-/* Larger hero image on wide desktops */
-@media (min-width: 1200px) {
-  .hero-inner {
-    grid-template-columns: 0.8fr 1.2fr;
-  }
-  .hero-image {
-    max-width: 1200px;
-  }
-}
-
-/* Ensure desktop keeps features under the header/subheader */
+/* Desktop horizontal alignment */
 @media (min-width: 901px) {
-  .hero-inner {
-    grid-template-areas:
-      "copy media"
-      "features media";
+  .hero-content {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
   }
-  .feature-list {
-    align-self: start;
+  .hero-copy {
+    justify-self: start;
+    text-align: left;
+  }
+  .hero-media {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
