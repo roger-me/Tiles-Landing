@@ -1,0 +1,48 @@
+Privacy Policy
+Effective Date: 31 October 2025
+This Privacy Policy ('Policy') explains how Roger Sans, as the data controller, processes
+personal data in connection with the mobile application Tiles ('the App').
+1. Data Controller and Contact Information
+The data controller for the processing of personal data through the App is Roger Sans, an
+independent developer, who may be contacted at support@thetiles.app.
+2. Categories of Personal Data Processed
+The App may collect and process the following categories of personal data:
+- Identification data (Apple ID and iCloud identifiers via Apple’s CloudKit service);
+- User profile data (username, avatar, and optional profile information);
+- Content data (pins, traces, photos, and text voluntarily created by the user);
+- Location data (used to display nearby tiles and unlock content, not continuously tracked);
+- Friendship or connection data (optional relationships created within the App).
+3. Purposes and Legal Bases for Processing
+Personal data is processed for the following purposes and based on the corresponding
+legal bases under the General Data Protection Regulation (GDPR):
+- To provide and maintain the App’s core functionality — Article 6(1)(b) GDPR
+(performance of a contract).
+- To ensure account authentication and secure storage — Article 6(1)(c) GDPR (legal
+obligation).
+- To respond to user inquiries and support requests — Article 6(1)(f) GDPR (legitimate
+interest).
+4. Data Storage and Security
+All personal data is stored within Apple’s CloudKit infrastructure, hosted on servers
+operated by Apple Inc. under GDPR-compliant conditions. The App does not transfer or
+store any personal data outside Apple’s ecosystem or the European Union.
+5. Data Retention
+Data will be retained only for as long as necessary to fulfil the purposes described above
+or as required by applicable law. When a user deletes their account or removes the App,
+related CloudKit records are deleted accordingly.
+6. Data Sharing and Transfers
+
+The developer does not sell, rent, or disclose personal data to any third party. Data
+processing occurs solely through Apple’s infrastructure for technical operation of the App.
+7. User Rights
+In accordance with the GDPR, users have the right to access, rectify, erase, or restrict
+processing of their data, as well as the right to data portability and the right to lodge a
+complaint with a supervisory authority.
+8. Children’s Privacy
+The App is not intended for use by individuals under 16 years of age. No data is knowingly
+collected from minors without parental consent.
+9. Updates to This Policy
+This Policy may be amended periodically. Users will be notified of material changes
+through an in-app notice or updated publication. Continued use of the App constitutes
+acceptance of the revised Policy.
+10. Contact
+For questions, data access, or deletion requests, please contact support@thetiles.app.

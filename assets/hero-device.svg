@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="iPhone mock with tiles">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="24" result="blur"/>
+      <feOffset dy="24" result="off"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="off"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <!-- iPhone body -->
+  <g filter="url(#shadow)" transform="translate(350,90)">
+    <rect x="0" y="0" width="500" height="720" rx="72" fill="#0B0F1A"/>
+    <rect x="8" y="8" width="484" height="704" rx="64" fill="url(#glass)"/>
+    <rect x="24" y="24" width="452" height="672" rx="56" fill="#0B0F1A"/>
+
+    <!-- Dynamic island -->
+    <rect x="190" y="36" width="120" height="28" rx="14" fill="#030712" opacity="0.9"/>
+
+    <!-- Tiles grid -->
+    <g transform="translate(64,108)">
+      <rect x="0" y="0" width="152" height="152" rx="22" fill="url(#tile)"/>
+      <rect x="172" y="0" width="152" height="152" rx="22" fill="#111827"/>
+      <rect x="344" y="0" width="152" height="152" rx="22" fill="#111827" opacity="0.8"/>
+
+      <rect x="0" y="172" width="152" height="152" rx="22" fill="#111827" opacity="0.8"/>
+      <rect x="172" y="172" width="152" height="152" rx="22" fill="url(#tile)"/>
+      <rect x="344" y="172" width="152" height="152" rx="22" fill="#111827"/>
+
+      <rect x="0" y="344" width="152" height="152" rx="22" fill="#111827"/>
+      <rect x="172" y="344" width="152" height="152" rx="22" fill="#111827" opacity="0.85"/>
+      <rect x="344" y="344" width="152" height="152" rx="22" fill="url(#tile)"/>
+    </g>
+  </g>
+</svg>
+
+
