@@ -292,6 +292,11 @@ main { flex: 1; }
   .header-inner {
     height: 56px;
   }
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
   .feature-list {
     justify-items: center;
   }
