@@ -158,10 +158,18 @@ main { flex: 1; }
   color: var(--muted);
 }
 .hero-note {
-  margin: 24px 0 0;
+  margin: 36px 0 0;
   font-size: 16px;
   color: var(--muted);
   opacity: 0.9;
+  font-weight: 600;
+}
+.apple-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: -2px;
+  margin: 0 0 0 6px;
+  color: currentColor;
 }
 .hero-media {
   display: flex;
