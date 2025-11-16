@@ -266,7 +266,7 @@ main { flex: 1; }
     height: 56px;
   }
   .hero-copy {
-    text-align: left;
+    text-align: center;
   }
   .feature-list {
     justify-items: center;
@@ -298,12 +298,16 @@ main { flex: 1; }
   .hero-copy {
     justify-self: start;
     text-align: left;
+    grid-column: 1;
+    grid-row: 1;
   }
   .hero-media {
     justify-self: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-column: 2;
+    grid-row: 1;
   }
 }
 
