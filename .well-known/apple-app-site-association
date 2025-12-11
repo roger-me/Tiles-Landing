@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "6Q92F4BB3G.com.rogersans.tiles",
+        "paths": ["/auth/*", "/*"]
+      }
+    ]
+  }
+}
