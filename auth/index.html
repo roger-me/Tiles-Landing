@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening Tiles...</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 40px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 24px;
+        }
+        .button {
+            display: inline-block;
+            background: white;
+            color: #1a1a2e;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 24px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spinner"></div>
+        <h1>Opening Tiles...</h1>
+        <p>If the app doesn't open automatically, tap the button below.</p>
+        <a id="openApp" class="button" href="#">Open Tiles App</a>
+        <p style="margin-top: 32px; font-size: 14px;">
+            Don't have the app?<br>
+            <a href="https://apps.apple.com/app/tiles" style="color: white;">Download from App Store</a>
+        </p>
+    </div>
+    <script>
+        // Get the full URL with query parameters
+        const fullUrl = window.location.href;
+
+        // Try to open the app with the tiles:// scheme
+        const appUrl = fullUrl.replace('https://thetiles.app', 'tiles://');
+
+        // Set the button link
+        document.getElementById('openApp').href = appUrl;
+
+        // Try to open automatically
+        window.location.href = appUrl;
+    </script>
+</body>
+</html>
