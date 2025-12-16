@@ -171,6 +171,19 @@ main { flex: 1; }
   margin: 0 0 0 6px;
   color: currentColor;
 }
+.app-store-link {
+  display: inline-block;
+  margin: 36px 0 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.app-store-link:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+.app-store-badge {
+  height: 44px;
+  width: auto;
+}
 .hero-media {
   display: flex;
   align-items: center;
@@ -276,7 +289,7 @@ main { flex: 1; }
     grid-column: 1;
     grid-row: 3;
     text-align: center;
-    margin: 0;
+    margin: 24px 0 0;
     display: block;
   }
   .hero-image {
